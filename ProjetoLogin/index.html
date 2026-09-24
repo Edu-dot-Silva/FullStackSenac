@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Biblioteca de icones Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <main class="login">
+        <img src="assets/imgs/fundo.gif" alt="Imagem fundo de login" class="login_img">
+
+        <form action="" class="login_form">
+            <h1 class="login_title">Login</h1>
+            <div class="login_content">
+
+                <div class="login_box">
+                    <i class="ri-mail-fill login_icon"></i>
+                    <div class="login_box_input">
+                        <input type="email" id="login_email" class="login_input" placeholder="" required>
+                        <label class="login_label" for="login_email">E-mail</label>
+                    </div>
+                </div>
+
+                <div class="login_box">
+                    <i class="ri-lock-fill login_icon"></i>
+                    <div class="login_box_input">
+                        <input type="password" id="login_password" class="login_input" placeholder="" required>
+                        <label class="login_label" for="login_password">Password</label>
+                    </div>
+                    <i class="ri-eye-line login_icon login_eye" id="login_eye"></i>
+                    <!-- <i class="ri-eye-off-line login_icon" id="login_eye_off"></i> -->
+                </div>
+
+                <div class="login_check">
+                    <div class="login_check_group">
+                        <input type="checkbox" id="login_check" class="login_check_input">
+                        <label for="login_check" class="login_check_label">Remember me</label>
+                    </div>
+
+                    <a class="login_forgot" href="pages/forgot-password.html">Forgot your password?</a>
+
+                </div>
+
+                <button type="submit" class="login_button">Login</button>
+
+                <p class="login_register">Don't have an account? <a href="pages/register.html">Register</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="/assets/js/login.js"></script>
+</html>

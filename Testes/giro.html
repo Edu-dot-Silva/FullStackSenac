@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="giro.css">
+</head>
+<body>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+    <button class="btnGira"></button>
+</body>
+
+<script>
+    // botoes mudam de posição aleatoriamente a cada x segundos
+    setInterval(() => {
+        const botoes = document.querySelectorAll('.btnGira');
+        botoes.forEach(botao => {
+            const x = Math.random() * (window.innerWidth - botao.offsetWidth);
+            const y = Math.random() * (window.innerHeight - botao.offsetHeight);
+            botao.style.position = 'absolute';
+            botao.style.left = `${x}px`;
+            botao.style.top = `${y}px`;
+        });
+    }, 100);
+</script>
+</html>

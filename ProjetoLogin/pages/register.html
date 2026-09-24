@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- Biblioteca de icones Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <script defer src="../assets/js/script.js"></script>
+</head>
+
+<body>
+    <main class="login">
+        <img src="../assets/imgs/fundo2.gif" alt="Imagem fundo de login" class="login_img">
+
+        <form action="" class="login_form">
+            <h1 class="login_title">Cadastro</h1>
+            <div class="login_content">
+
+                <div class="login_box">
+                    <i class="ri-mail-fill login_icon"></i>
+                    <div class="login_box_input">
+                        <input type="email" id="register_email" class="login_input" placeholder="" required>
+                        <label class="login_label" for="register_email">Email</label>
+                    </div>
+                </div>
+
+                <div class="login_box">
+                    <i class="ri-lock-fill login_icon"></i>
+                    <div class="login_box_input">
+                        <input type="password" id="register_password" class="login_input" placeholder="" required>
+                        <label class="login_label" for="register_password">Password</label>
+                    </div>
+                    <i class="ri-eye-line login_icon" id="register_eye"></i>
+                    <i class="ri-eye-off-line login_icon" id="register_eye_off"></i>
+                </div>
+
+                <div class="login_box">
+                    <i class="ri-lock-fill login_icon"></i>
+                    <div class="login_box_input">
+                        <input type="password" id="register_confirm_password" class="login_input" placeholder="" required>
+                        <label class="login_label" for="register_confirm_password">Re-enter Password</label>
+                    </div>
+                    <i class="ri-eye-line login_icon" id="register_eye"></i>
+                    <i class="ri-eye-off-line login_icon" id="register_eye_off"></i>
+                </div>
+
+                <button type="submit" class="login_button">Register</button>
+
+                <p class="login_register">Already have an account? <a href="../index.html">Login</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

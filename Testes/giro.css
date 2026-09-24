@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btnGira{
+    width: 126px;
+    height: 64px;
+    font-size: 20px;
+    background-color: rgb(10, 160, 230);
+    border-radius: 32px;
+    border: 2px solid rgba(39, 30, 80, 0.705);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    animation: girar 00000000000.1s linear infinite;
+    /* adiciona efeito de luz no botao */
+    box-shadow: 0 0 10px rgba(0, 26, 255, 0.5), 0 0 20px rgba(0, 195, 255, 0.5), 0 0 30px rgba(0, 195, 255, 0.5);
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

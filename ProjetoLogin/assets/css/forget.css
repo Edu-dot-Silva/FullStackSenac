@@ -1,0 +1,117 @@
+@import url("main.css");
+
+/* Reaproveita o estilo do login para a tela de recuperação */
+.login {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login_form {
+    border: 2px solid var(--cor-login-1);
+    border-radius: 24px;
+    padding: 2.5rem 1.5rem;
+    background-color: rgba(9, 171, 212, 0.363);
+    backdrop-filter: blur(10px);
+    transition: all 0.01s ease-in-out;
+    position: relative;
+    margin-inline: 1rem;
+    box-shadow: 0px 0px 15px 2px var(--cor-login-1);
+}
+
+.login_title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login_content,
+.login_box {
+    display: grid;
+}
+
+.login_content {
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.login_box {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: .75rem;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.login_icon {
+    font-size: 1.25rem;
+}
+
+.login_input {
+    width: 100%;
+    background-color: transparent;
+    color: var(--font-color);
+    padding-block: 0.8rem;
+}
+
+.login_box_input {
+    position: relative;
+    width: 100%;
+}
+
+.login_label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: var(--small-font-size);
+    color: var(--font-color);
+    transition: all 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.login_box:nth-child input {
+    padding-right: 8rem;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+.login_button {
+    width: 100%;
+    background-color: var(--cor-login-2);
+    border-radius: 24px;
+    color: white;
+    border: none;
+    padding: 1rem 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.login_button:hover {
+    transform: scale(0.98);
+}
+
+.login_register{
+    font-size: var(--small-font-size);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.login_register a{
+    color: var(--cor-login-2);
+}
+
+.login_register a:hover{
+    text-decoration: underline;
+}
+
+/* mover a label para cima quando o input estiver em foco ou preenchido */
+.login_input:focus + .login_label,
+.login_input:not(:placeholder-shown) + .login_label {
+    top: -10px;
+    font-size: 8px;
+}

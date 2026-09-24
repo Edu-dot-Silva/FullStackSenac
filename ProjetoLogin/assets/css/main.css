@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+:root{
+    /* Cores login */
+    --cor-login-1: #00fcfc;
+    --cor-login-2: #004058;
+    --cor-login-3: #008888;
+    --cor-login-4: #00dcce;
+
+    /* Cores cadastro */
+    --cor-cadastro-1: #f33f20;
+    --cor-cadastro-2: #eee78d;
+    --cor-cadastro-3: #5a3e40;
+    --cor-cadastro-4: #f35730;
+
+    /* fonte e tipografia */
+    --font-family: "Press Start 2P", system-ui;
+    --h1-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    
+    /* peso da fonte */
+    --font-medium: 500;
+
+    /* cor da fonte */
+    --font-color: #fff;
+}
+
+body , input, button{
+    font-family: var(--font-family);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+body{
+    color: var(--font-color);
+}
+
+input, button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
