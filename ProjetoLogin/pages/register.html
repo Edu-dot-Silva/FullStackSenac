@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/register.css">
-    <script defer src="../assets/js/script.js"></script>
 </head>
 
 <body>
@@ -38,8 +37,7 @@
                         <input type="password" id="register_password" class="login_input" placeholder="" required>
                         <label class="login_label" for="register_password">Password</label>
                     </div>
-                    <i class="ri-eye-line login_icon" id="register_eye"></i>
-                    <i class="ri-eye-off-line login_icon" id="register_eye_off"></i>
+                    <i class="ri-eye-line login_icon login_eye" id="register_eye"></i>
                 </div>
 
                 <div class="login_box">
@@ -48,8 +46,7 @@
                         <input type="password" id="register_confirm_password" class="login_input" placeholder="" required>
                         <label class="login_label" for="register_confirm_password">Re-enter Password</label>
                     </div>
-                    <i class="ri-eye-line login_icon" id="register_eye"></i>
-                    <i class="ri-eye-off-line login_icon" id="register_eye_off"></i>
+                    <i class="ri-eye-line login_icon login_eye" id="register_eye_repeat"></i>
                 </div>
 
                 <button type="submit" class="login_button">Register</button>
@@ -59,5 +56,5 @@
         </form>
     </main>
 </body>
-
+<script src="../assets/js/register.js" defer></script>
 </html>

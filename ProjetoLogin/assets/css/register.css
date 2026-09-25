@@ -70,9 +70,12 @@
 }
 
 #register_eye,
-#register_eye_off {
+#register_eye_off,
+#register_eye_repeat {
     position: absolute;
     right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 1.25rem;
     cursor: pointer;
     z-index: 10;
