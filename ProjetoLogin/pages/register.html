@@ -19,14 +19,14 @@
     <main class="login">
         <img src="../assets/imgs/fundo2.gif" alt="Imagem fundo de login" class="login_img">
 
-        <form action="" class="login_form">
+        <form action="" class="login_form" id="formulario">
             <h1 class="login_title">Cadastro</h1>
             <div class="login_content">
 
                 <div class="login_box">
                     <i class="ri-mail-fill login_icon"></i>
                     <div class="login_box_input">
-                        <input type="email" id="register_email" class="login_input" placeholder="" required>
+                        <input autocomplete="true" type="email" id="register_email" class="login_input" placeholder="" required>
                         <label class="login_label" for="register_email">Email</label>
                     </div>
                 </div>
@@ -57,4 +57,5 @@
     </main>
 </body>
 <script src="../assets/js/register.js" defer></script>
+<script src="../assets/js/storage.js" defer></script>
 </html>
