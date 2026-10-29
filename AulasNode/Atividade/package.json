@@ -1,0 +1,16 @@
+{
+  "name": "atividade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/esm/app.js",
+  "scripts": {
+    "start": "node src/esm/app.js",
+    "start:esm": "node --watch src/esm/app.js",
+    "start:common": "node --watch src/commonjs/app.cjs",
+    "start.cjs": "node src/commonjs/app.cjs"
+  },
+  "keywords": [],
+  "author": "Eduardo",
+  "license": "ISC",
+  "type": "module"
+}

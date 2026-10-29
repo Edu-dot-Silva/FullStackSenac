@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "nba": "^4.15.0",
+    "nba-api-client": "^1.1.2"
+  },
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nba.js",
+  "scripts": {
+    "start": "node nba.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
