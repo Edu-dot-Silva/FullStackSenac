@@ -13,16 +13,16 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
-const testConnection = async () => {
-  try {
-    const connection = await pool.getConnection();
-    console.log('Conexão bem-sucedida ao banco de dados!');
-    connection.release();
-  } catch (err) {
-    console.error('Erro ao conectar ao banco de dados:', err.message);
-  }
-};
+// const testConnection = async () => {
+//   try {
+//     const connection = await pool.getConnection();
+//     console.log('Conexão bem-sucedida ao banco de dados!');
+//     connection.release();
+//   } catch (err) {
+//     console.error('Erro ao conectar ao banco de dados:', err.message);
+//   }
+// };
 
-testConnection();
+// testConnection();
 
 export default pool;
