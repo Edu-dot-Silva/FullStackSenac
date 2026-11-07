@@ -4,18 +4,38 @@ import generateToken from '../utils/generateTokem.js';
 
 // funcao de cadastro de usuário
 export const register = async (req, res) => {
-    const { name, email, password } = req.body;
+  const { name, email, password } = req.body;
+
+  if (!name || !email || !password) {
+    return res.status(400).json({ message: 'Por favor, preencha todos os campos' });
+  }
+
+  try {
     const hashedPassword = await bcrypt.hash(password, 10);
-    const user = await db.query('INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING *', [name, email, hashedPassword]);
-    const token = generateToken(user.rows[0].id);
-    res.json({ token });
+
+    const [result] = await db.query(
+      'INSERT INTO users (name, email, password) VALUES (?, ?, ?)',
+      [name, email, hashedPassword]
+    );
+
+    const token = generateToken(result.insertId);
+    return res.status(201).json({ token });
+  } catch (error) {
+    console.error('Erro ao registrar usuário:', error);
+    return res.status(500).json({ message: 'Erro ao registrar usuário' });
+  }
 };
 
-register({
-    body: {
-        name: 'joao',
-        email: 'joao@exemplo.com',
-        password: '123456'
-    }
-});
+register(
+    {
+        body: {
+            name: 'Richard',
+            email: 'Richar@example.com',
+            password: 'senha123'
+        }
+    },
+    {
+        status: (code) => ({json: (data) => console.log(`Status: ${code}, Response:`, data)}),
+    }   
+);
 
