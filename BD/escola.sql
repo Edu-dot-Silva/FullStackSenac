@@ -30,3 +30,19 @@ ALTER TABLE alunos DROP COLUMN email;
 INSERT INTO alunos (nome, idade, curso_atual) VALUES
 ('Ana Lima', 21, 'Engenharia'),
 ('Carlos Pereira', 23, 'Arquitetura');
+
+SELECT * FROM alunos;
+
+-- inserindo 10 registros
+insert into alunos (nome, idade, curso) values 
+('João Silva', 20, 'Física'),
+('Maria Santos', 22, 'Química'),
+('Pedro Almeida', 19, 'Biologia'),
+('Ana Costa', 21, 'Matemática'),
+('Carlos Rodrigues', 23, 'História'),
+('Juliana Ferreira', 20, 'Geografia'),
+('Lucas Mendes', 22, 'Física'),
+('Camila Souza', 19, 'Química'),
+('Felipe Oliveira', 21, 'Biologia'),
+('Laura Pereira', 23, 'Matemática');
+

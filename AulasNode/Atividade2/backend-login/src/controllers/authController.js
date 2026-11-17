@@ -26,16 +26,16 @@ export const register = async (req, res) => {
   }
 };
 
-register(
-    {
-        body: {
-            name: 'Richard',
-            email: 'Richar@example.com',
-            password: 'senha123'
-        }
-    },
-    {
-        status: (code) => ({json: (data) => console.log(`Status: ${code}, Response:`, data)}),
-    }   
-);
+// register(
+//     {
+//         body: {
+//             name: 'Richard',
+//             email: 'Richar@example.com',
+//             password: 'senha123'
+//         }
+//     },
+//     {
+//         status: (code) => ({json: (data) => console.log(`Status: ${code}, Response:`, data)}),
+//     }   
+// );
 
